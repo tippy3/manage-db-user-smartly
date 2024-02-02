@@ -12,7 +12,7 @@ if [ "$(uname)" == 'Darwin' ]; then
   alias sed="gsed"
 fi
 
-for file in $(find $input_dir -type f); do
+for file in $(find $input_dir -name "*.yaml"); do
   echo "$file"
   result_dir=$(dirname "$file" | sed -e "s/$input_dir/$output_dir/")
   mkdir -p "$result_dir"
