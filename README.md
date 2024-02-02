@@ -117,7 +117,7 @@ Set IP CIDR in [convert_ip.sh](convert_ip.sh)
 
 ## Requirements
 
-- GNU-Sed (if macOS)
+- GNU-sed (if macOS)
   - `brew install gsed`
 - yq (Python yq)
   - `pip install yq`
