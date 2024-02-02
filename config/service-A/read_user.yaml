@@ -1,0 +1,15 @@
+env:
+  - prd
+  - stg
+  - dev
+user:
+  - akane.kurokawa
+  - goro.amamiya
+ip_cidr:
+  - 172.X.0.0/24
+  - 172.X.1.0/24
+  - 172.X.2.0/24
+identified:
+  - IDENTIFIED WITH AWSAuthenticationPlugin AS 'RDS'
+grant:
+  - GRANT SELECT ON service_a.*

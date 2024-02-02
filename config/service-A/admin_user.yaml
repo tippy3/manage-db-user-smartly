@@ -1,0 +1,17 @@
+env:
+  - prd # 172.16.X.X
+  - stg # 172.17.X.X
+  - dev # 172.18.X.X
+user:
+  - ai.hoshino
+  - kana.arima
+ip_cidr:
+  - 172.X.0.0/24 # ap-northeast-1a
+  - 172.X.1.0/24 # ap-northeast-1c
+  - 172.X.2.0/24 # ap-northeast-1d
+identified:
+  - IDENTIFIED BY 'password'; #TODO: generate password automatically
+grant:
+  - GRANT ALL ON *.*
+  - GRANT PROCESS ON *.*
+  - GRANT ALL PRIVILEGES ON sys.*
