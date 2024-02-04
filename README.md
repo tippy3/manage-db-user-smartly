@@ -1,6 +1,6 @@
-# Manage Database Users Smartly
+# 大量のDBユーザーを便利に管理するサンプル
 
-大量のDBユーザーを便利に管理するサンプルです。YAMLを書くと環境×ユーザー×HOSTの数だけSQL文を生成します。
+かんたんな設定ファイルから 環境 × ユーザー × HOST の数だけSQL文を自動生成する例です。
 
 ## Input
 
@@ -109,8 +109,16 @@ GRANT ALL PRIVILEGES ON sys.* TO 'kana.arima'@'172.16.2.0/255.255.255.0';
 
 ## How to use
 
+Run all files
+
 ```bash
 ./generate_all.sh
+```
+
+Run one file
+
+```bash
+./create_sql.sh config/service-A/admin_user.yaml generated/service-A
 ```
 
 Set IP CIDR in [convert_ip.sh](convert_ip.sh)
