@@ -9,6 +9,6 @@ ip_cidr:
   - 10.18X.16.0/20
   - 10.18X.32.0/20
 identified:
-  - IDENTIFIED BY 'password';
+  - IDENTIFIED BY 'password'
 grant:
   - GRANT SELECT,INSERT,UPDATE,DELETE ON service_b.*

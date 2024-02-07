@@ -10,7 +10,7 @@ ip_cidr:
   - 172.X.1.0/24 # ap-northeast-1c
   - 172.X.2.0/24 # ap-northeast-1d
 identified:
-  - IDENTIFIED BY 'password'; #TODO: generate password automatically
+  - IDENTIFIED BY 'password' #TODO: generate password automatically
 grant:
   - GRANT ALL ON *.*
   - GRANT PROCESS ON *.*
